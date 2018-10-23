@@ -1,4 +1,6 @@
 # VisionKit
+[![PyPI](https://img.shields.io/pypi/v/VisionKit.svg)](https://pypi.org/project/VisionKit/)
+
 Making computer vision easy with wrappers and presets
 
 ## PresetKit Pipelines
