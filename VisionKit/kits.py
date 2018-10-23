@@ -22,6 +22,9 @@ class PresetKit(object):
 		self.__LOG("Creating CV2 camera")
 		self.camera = cv2.VideoCapture(cam_id)
 	
+	def closeCam(self):
+		self.camera.release()
+	
 	def getData(self) -> dict:
 		""" Use a preset pipeline to get data about the image """
 		# Get a frame from opencv
@@ -53,6 +56,7 @@ class PresetKit(object):
 	def setPipeline(self, name: str) -> None:
 		if name in avalible_presets:
 			self.pipeline = avalible_presets[name]
+			self.__LOG("Pipeline has been set to: "+ name)
 		else:
 			print(name + " is not an avalible pipeline")
 	
@@ -61,4 +65,13 @@ class PresetKit(object):
 		if self.logging_enabled:
 			print(text)
 
-## CustomKit ##
+## ClassifyKit ##
+
+## FilterCreateKit ##
+# class FilterCreateKit(object):
+# 	def __init__(self):
+# 		self.input_folder = None
+# 		self.output_file = None
+	
+# 	def train(self, input_folder: str, output_file: str):
+		
