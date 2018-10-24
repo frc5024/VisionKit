@@ -18,7 +18,7 @@ class PresetKit(object):
 		self.camera = 0
 		self.pipeline = None
 	
-	def setCam(self, cam_id: int) -> None:
+	def setCam(self, cam_id) -> None:
 		self.__LOG("Creating CV2 camera")
 		self.camera = cv2.VideoCapture(cam_id)
 	
