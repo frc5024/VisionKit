@@ -2,8 +2,8 @@
 import cv2
 
 # Import various presets
-from kitfiles import greentape as greentape
-from kitfiles import raidershirtfind as rsf
+from .kitfiles import greentape as greentape
+from .kitfiles import raidershirtfind as rsf
 
 avalible_presets = {
 	"greentape" : greentape.GreenTape(),
