@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='VisionKit',
-    version='0.2rc5',
+    version='0.2rc6',
     description='Making computer vision easy with wrappers and presets',
     url='https://github.com/frc5024/VisionKit',
     author='Evan Pratten',
